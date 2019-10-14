@@ -1,0 +1,20 @@
+jms:
+  queue: scores
+  port: 61616
+  host: localhost
+
+logging:
+  level:
+    ROOT: ERROR
+    httpclient.wire.header: ERROR
+    com.atomikos: ERROR
+    org.springframework.jms.core: ERROR
+    org.apache.http: ERROR
+    org.springframework.transaction: ERROR
+    org.springframework.transaction.interceptor: ERROR
+    org.hibernate: ERROR
+    org.hibernate.SQL: ERROR
+    org.hibernate.type.descriptor.sql: ERROR
+    org.hibernate.pretty: ERROR
+    org.hibernate.type: ERROR
+    org.springframework.jdbc.core: ERROR

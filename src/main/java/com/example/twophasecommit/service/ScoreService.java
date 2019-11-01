@@ -26,7 +26,6 @@ public class ScoreService {
     public void save(Score score) {
         score=dbRepository.save(score);
         publisher.publishEvent(score);
-       // jmsRepository.sendScoreMessage(score);
     }
 
 

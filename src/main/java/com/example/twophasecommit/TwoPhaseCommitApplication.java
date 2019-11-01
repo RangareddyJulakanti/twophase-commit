@@ -6,27 +6,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import java.util.Random;
-
 @SpringBootApplication
-public class TwophaseCommitApplication {
-
-
+public class TwoPhaseCommitApplication {
 	public static void main(String[] args) {
-		ConfigurableApplicationContext context = SpringApplication.run(TwophaseCommitApplication.class, args);
-
+		ConfigurableApplicationContext context = SpringApplication.run(TwoPhaseCommitApplication.class, args);
 		ScoreService service = context.getBean(ScoreService.class);
-
-		Score score = new Score();
-		//score.setId(new Random().nextLong());
-		score.setSname("bot");
-		score.setCourse("Software Development");
-		score.setScore(700);
-
+		Score score = Score.builder().sname("bot")
+				.course("software development")
+				.score(700).build();
 		service.save(score);
-
-		// context.stop();
-		// context.close();
 	}
 
 

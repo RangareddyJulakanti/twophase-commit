@@ -67,21 +67,21 @@
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.oracle</groupId>-->
+<!--			<artifactId>ojdbc7</artifactId>-->
+<!--			<version>12.1.0.2</version>-->
+<!--		</dependency>-->
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc7</artifactId>
-			<version>12.1.0.2</version>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jta-atomikos</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>javax.jms</groupId>
-			<artifactId>jms</artifactId>
-            <version>1.1</version>
-		</dependency>
+
 		<dependency>
 			<groupId>javax.jms</groupId>
 			<artifactId>javax.jms-api</artifactId>

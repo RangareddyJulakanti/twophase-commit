@@ -17,8 +17,8 @@ public class JMSListenerAdvice {
          BaseException baseException= convertInstanceOfObject(exception,BaseException.class);
          log.error("ERROR_CODE:: {}",baseException.getErrorCode());
          log.error("ERROR_MESSAGE: {}",baseException.getErrorMessage());
-         log.error("ERROR_CODE: {}",baseException.getEventType());
-         log.error("ERROR_CODE: {}",baseException.getQueueName());
+         log.error("EVENT_TYPE: {}",baseException.getEventType());
+         log.error("QUEUE_NAME: {}",baseException.getQueueName());
      }
 
     }

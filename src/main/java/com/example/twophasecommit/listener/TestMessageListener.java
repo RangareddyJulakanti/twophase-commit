@@ -15,9 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Map;
 
-/**
- * Created by jerrie on 17-5-18.
- */
 @Component
 public class TestMessageListener {
 
